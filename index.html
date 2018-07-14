@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas</title>
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+  <div class="wrapper">
+    
+    <div class="welcome-bg">
+      <div class="welcome">
+        <h1 class="fadeup">JS draw</h1>
+        <h2 class="fadeup">By fly</h2>
+        <span class="btn fadeup">Start draw</span>
+      </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="cursor" id="cursor"></div>
+
+    <div class="toolbar">
+      <ul class="tools">
+        <li class="tool">
+          <div class="pencil" title="画笔尺寸">
+            <svg class="iconfont">
+              <use xlink:href="#icon-pencil3"></use>
+            </svg>
+          </div>
+          <div class="popup popupSize">
+            <p>Brush size</p>
+            <ul id="size"></ul>
+          </div>
+        </li>
+        <li class="tool">
+          <div class="palette" title="调色盘">
+            <svg class="iconfont">
+              <use xlink:href="#icon-palette"></use>
+            </svg>
+          </div>
+          <div class="popup  popupColor">
+            <p>Brush color</p>
+            <ul id="colors"></ul>
+          </div>
+        </li>
+        <li class="tool">
+          <div class="save" title="下载图片">
+            <svg class="iconfont">
+              <use xlink:href="#icon-download1"></use>
+            </svg>
+          </div>
+          <div class="popup popupSave">
+            <p>download your design</p>
+            <div class="from">
+              <input type="text" placeholder="fillname" class="fillname" min="1">
+              <a class="btn" download onselectstart="return false;">Download</a>
+            </div>
+          </div>
+        </li>
+        <li class="tool">
+          <div class="clearRect" title="清空画板">
+            <svg class="iconfont">
+              <use xlink:href="#icon-trash"></use>
+            </svg>
+          </div>
+        </li>
+        <li class="tool">
+          <div class="backWelcome" title="Back">
+            <svg class="iconfont">
+              <use xlink:href="#icon-start"></use>
+            </svg>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="//at.alicdn.com/t/font_740095_y2q2cfwqroe.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
